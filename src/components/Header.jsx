@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
   const headerStyle = {
-    color: '#E0E7FF', // Very pale lavender/white for "STUDENT"
+    color: '#E0E7FF', 
     fontSize: '52px',
-    fontWeight: '800', // Bold
+    fontWeight: '800',
     letterSpacing: '1px',
     margin: '30px 0 10px 0',
     display: 'flex',
@@ -13,9 +13,9 @@ const Header = () => {
   };
 
   const scoreboardStyle = {
-    color: '#00F3C3', // Cyan/Teal color
+    color: '#00F3C3', 
     fontWeight: '700',
-    // --- THIS SECTION CREATES THE GLOW ---
+   
     textShadow: `
       0 0 5px #00F3C3,   /* Inner soft glow */
       0 0 10px #00F3C3,  /* Medium glow */
@@ -26,11 +26,11 @@ const Header = () => {
 
   const versionStyle = {
     fontSize: '12px',
-    color: '#525C67', // Dim grey
-    marginLeft: 'auto', // Push to the right
+    color: '#525C67', 
+    marginLeft: 'auto', 
     fontWeight: '400',
     letterSpacing: '2px',
-    fontFamily: 'monospace' // Mimic terminal text
+    fontFamily: 'monospace' 
   };
 
   return (

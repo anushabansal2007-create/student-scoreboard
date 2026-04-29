@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const StudentRow = ({ student, onUpdateScore }) => {
-  // Local state to hold the typing value
+
   const [localScore, setLocalScore] = useState(student.score);
 
   const isPass = student.score >= 40;
@@ -20,12 +20,12 @@ const StudentRow = ({ student, onUpdateScore }) => {
           <input 
             type="number" 
             value={localScore} 
-            onChange={(e) => setLocalScore(e.target.value)} // Allows typing
+            onChange={(e) => setLocalScore(e.target.value)} 
             className="update-input"
           />
           <button 
             className="save-btn" 
-            onClick={() => onUpdateScore(student.id, localScore)} // Sends to App.jsx
+            onClick={() => onUpdateScore(student.id, localScore)} 
           >
             SAVE
           </button>

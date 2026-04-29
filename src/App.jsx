@@ -12,7 +12,7 @@ function App() {
     { id: 4, name: 'Neha', score: 32 },
   ]);
 
-  // Logic for adding/updating
+
   const addStudent = (name, score) => {
     const newStudent = { id: Date.now(), name, score: parseInt(score) || 0 };
     setStudents([...students, newStudent]);
@@ -22,7 +22,7 @@ function App() {
     setStudents(students.map(s => s.id === id ? { ...s, score: parseInt(newScore) || 0 } : s));
   };
 
-  // Stats Calculations
+
   const total = students.length;
   const passed = students.filter(s => s.score >= 40).length;
   const avg = total > 0 ? Math.round(students.reduce((acc, s) => acc + s.score, 0) / total) : 0;
@@ -31,7 +31,7 @@ function App() {
     <div className="app-container">
       <Header />
 
-      {/* --- STATS SECTION --- */}
+  
       <div className="stats-grid">
         <div className="stat-card">
           <p>TOTAL</p>
